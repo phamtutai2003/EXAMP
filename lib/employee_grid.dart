@@ -22,9 +22,9 @@ class EmployeeGridScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Danh sách nhân viên'),
+        title: Text('Grid View'),
       ),
-      body: EmployeeGridView(), // Sử dụng EmployeeGridView widget để hiển thị danh sách nhân viên dưới dạng GridView
+      body: EmployeeGridView(),
     );
   }
 }
@@ -60,7 +60,6 @@ class Employee {
   });
 }
 
-// Danh sách nhân viên (cần thay thế dữ liệu thực tế)
 List<Employee> employees = [
   Employee(
     name: 'John Doe',
